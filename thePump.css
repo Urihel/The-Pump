@@ -1,0 +1,132 @@
+   @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Comfortaa:300&display=swap');
+    body {
+        margin: 0;
+        padding: 0;
+    }
+#container {
+    border: 2px solid #BABABA ;
+    height: 700px;
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+    width:400px;
+
+}
+#title {
+    background-color: #FF0049;
+    border: 2px solid #FF4F7C;
+    color: white;
+    font-family:'Luckiest Guy', cursive;
+    font-size: 30px;
+    height: 100px;
+    line-height: 100px;
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    text-align: center;
+     width: 400px;
+}
+
+#mod-menu {
+    background-color: #414141;
+    border: 2px solid #636363;
+    height: 40px;
+    position: absolute;
+    top: 100px;
+    left: -2px;
+    width: 400px;
+}
+
+#zipcode {
+    background: #E3E3E3;
+    border : 2px solid #F2F2F2;
+    border-radius: 8px;
+    font-family: 'Comfortaa', cursive;
+    height: 20px;
+    margin: 6px;
+    margin-left: 10px;
+    text-align: center;
+}
+/*----------------Turn these selectors into ID's----------------------------*/
+select {
+    background: #E3E3E3;
+    border : 2px solid #F2F2F2;
+    border-radius: 8px;
+    font-family: 'Comfortaa', cursive;
+    height: 25px;
+    margin-left: 5px;
+}
+button {
+    background-color: #FF0049;
+    border: 2px solid #FF4F7C;
+    border-radius: 8px;
+    font-family: 'Comfortaa', cursive;
+    height: 25px;
+    margin-left: 10px;
+}
+.fas { 
+    color: #00C9FF;
+    margin-left: 10px;
+}
+/*------------------------------------------*/
+#gas-grid-container {
+    height: 556px;
+    position: absolute;
+    top: 142px;
+    left:-2px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #BABABA;
+    margin-top:2px;
+    padding: 0;
+}
+
+#grid-item1 {
+  background-color: #8C8C8C;
+  border: 1px solid #BABABA;
+  font-family: 'Comfortaa', cursive;
+  line-height: 100px;
+  margin-left: 1px;
+  padding: 0;
+  font-size: 20px;
+  text-align: center;
+  width: 400px;
+}
+
+#grid-item2 {
+  background-color: #8C8C8C;
+  border: 1px solid #BABABA;
+  font-family: 'Comfortaa', cursive;
+  line-height: 100px;
+  margin-left: 1px;
+  padding: 0;
+  font-size: 20px;
+  text-align: center;
+  width: 400px;
+}
+
+#grid-item3 {
+  background-color: #8C8C8C;
+  border: 1px solid #BABABA;
+  font-family: 'Comfortaa', cursive;
+  line-height: 100px;
+  margin-left: 1px;
+  padding: 0;
+  font-size: 20px;
+  text-align: center;
+  width: 400px;
+}
+
+#grid-item4 {
+  background-color: #8C8C8C;
+  border: 1px solid #BABABA;
+  font-family: 'Comfortaa', cursive;
+  line-height: 100px;
+  margin-left: 1px;
+  padding: 0;
+  font-size: 20px;
+  text-align: center;
+  width: 400px;
+}

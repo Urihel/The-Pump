@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF">
+<title>The Pump</title> 
+<link rel="stylesheet" type="text/css" href="thePump.css"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+
+    <div id="container">
+        <div id="title">The Pump</div> <!--The title of the app-->
+       <!--The menu where you enter your zipcode and sort the gas price L-H-->
+        <div id="mod-menu">
+            <input id="zipcode" type="text" placeholder="Zipcode">
+            <select id="fuel-type">
+                <option id="fuel-1">Fuel Type</option>
+                <option id="fuel-2">Gas</option>
+                <option id="fuel-3">E85</option>
+                <option id="fuel-4">Diesel</option>
+                <option id="fuel-5">Electric</option>
+            </select>
+            <button id="btn">Press</button>
+            <!--Develop a sort menu that organizes gas stations by rating or low to high price and vice versa.-->
+            <i id="icon"class="fas fa-sort"></i>
+        </div>
+        <!--________________________________________________________________-->
+        <div id="gas-grid-container"> 
+            <!-- make sure to include a grid flip card code so when you select gas station you it flips with deal 
+            data, directions address, phone number to contact to see if open, and the finally if selected then it routes 
+            using google maps API --> 
+                <div id="grid-item1">Chevron</div>
+                <div id="grid-item2">Shell</div>
+                <div id="grid-item3">Valero</div>  
+                <div id="grid-item4">Arco</div>
+                
+        </div>
+    </div>
+    <script>
+    var zipCode = document.getElementById("zipcode");
+    var sortImage = document.getElementById("icon");//The DOM to sorting icon
+    var pressButton = document.getElementById("btn");//The DOM to button on html doc
+    var card1 = document.getElementById("grid-item1");//The DOM to grid-item1 on html doc.
+    var card2 = document.getElementById("grid-item2");//The DOM to grid-item2 on html doc.
+    var card2 = document.getElementById("grid-item3");//The DOM to grid-item3 on html doc.
+    var card2 = document.getElementById("grid-item4");//The DOM to grid-item4 on html doc.
+
+    //The sort Icon along with its own click function
+    sortImage.addEventListener('click', function () {
+        console.log("The icon is now clickable");
+    });
+    //the press down button to give you cheap gas results in area. 
+    pressButton.addEventListener("click", function () {
+        console.log("The press down button is working");
+        if(zipCode.value === "95121") {
+            console.log("zero is working");
+        }
+    });
+    //create some logic that will take the zipcode and render our first cheap pump near by. 
+    card1.addEventListener("click", function () {
+        //scrape the web for prices
+        var price = ["Regular $2.00", "Plus $2.50", "Supreme $3.00"];
+        card1.innerText = price[0] + " " + price[1] + " " + price[2] ;
+        card1.style.lineHeight = "100px";
+        card1.style.fontSize = "20px";
+
+    });
+   
+    
+    
+    </script>
+
+</body>
+</html>
